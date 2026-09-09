@@ -100,10 +100,10 @@
       }
 
       const numeroTelefone = "5511952332325";
+        
       const mensagem = `Olá, CaseVibe! Gostaria de fazer um pedido:\n\n📱 Modelo: ${modelo}\n✏️ Nome/Frase: ${nomeFrase}`;
 
       const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
-      window.open(linkFinal, '_blank');
-    }
+      window.location.href = linkFinal;
   </script>
   
