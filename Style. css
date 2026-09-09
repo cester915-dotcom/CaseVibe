@@ -73,3 +73,24 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+#personalizar {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#personalizar select,
+#personalizar input {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#personalizar button {
+    margin-top: 10px;
+}
