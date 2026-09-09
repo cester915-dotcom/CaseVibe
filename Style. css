@@ -27,3 +27,33 @@ h2 {
     color: #ff4fa3;
     margin-top: 30px;
 }
+.produtos {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.produto {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produto h3 {
+    font-size: 24px;
+}
+
+.produto strong {
+    font-size: 22px;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
