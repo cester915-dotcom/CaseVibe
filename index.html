@@ -89,4 +89,22 @@
     <a href="https://wa.me/5511952332325?text=Quero%20ajuda" target="_blank"><button>Enviar mensagem</button></a>
 </section>
 </body>
+    <script>
+function enviarWhatsApp(event) {
+  event.preventDefault(); // Impede a página de recarregar
+
+  // 1. Pega os valores digitados pelo usuário
+  const modelo = document.getElementById('modelo').value;
+  const nomeFrase = document.getElementById('nomeFrase').value;
+
+  // 2. Cria o texto da mensagem formatado
+  const numeroTelefone = "5511952332325";
+  const textoMensagem = `Olá, gostaria de ajuda! %0AModelo: ${modelo} %0ANome/Frase: ${nomeFrase}`;
+
+  // 3. Monta o link final e abre em uma nova aba
+  const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(textoMensagem)}`;
+  window.open(linkFinal, '_blank');
+}
+    </script>
+    
 </html>
