@@ -87,3 +87,23 @@
     <a href="#" onclick="enviarWhatsApp(event)"><button>Enviar Pedido</button></a>
 </section>
 </body>
+  <script>
+    function enviarWhatsApp(event) {
+      event.preventDefault();
+
+      const modelo = document.getElementById('modelo').value;
+      const nomeFrase = document.getElementById('nomeFrase').value;
+
+      if (!modelo) {
+        alert("Por favor, selecione o modelo do seu celular!");
+        return;
+      }
+
+      const numeroTelefone = "5511952332325";
+      const mensagem = `Olá, CaseVibe! Gostaria de fazer um pedido:\n\n📱 Modelo: ${modelo}\n✏️ Nome/Frase: ${nomeFrase}`;
+
+      const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+      window.open(linkFinal, '_blank');
+    }
+  </script>
+  
