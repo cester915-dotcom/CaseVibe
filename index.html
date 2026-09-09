@@ -102,7 +102,9 @@ function enviarWhatsApp(event) {
   // 3. Monta o link final e abre em uma nova aba
   const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(textoMensagem)}`;
   window.open(linkFinal, '_blank');
-}
+// VERSÃO CORRIGIDA (com crases)
+const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(textoMensagem)}`;
+    
     </script>
     
 </html>
