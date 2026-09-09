@@ -97,14 +97,11 @@ function enviarWhatsApp(event) {
 
   // 2. Cria o texto da mensagem formatado
   const numeroTelefone = "5511952332325";
-  const textoMensagem = `Olá, gostaria de ajuda! %0AModelo: ${modelo} %0ANome/Frase: ${nomeFrase}`;
+  const textoMensagem = `Olá, gostaria de fazer um pedido!\nModelo: ${modelo}\nNome/Frase: ${nomeFrase}`;
 
-  // 3. Monta o link final e abre em uma nova aba
+  // 3. Monta o link correto usando crases e a barra /
   const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(textoMensagem)}`;
   window.open(linkFinal, '_blank');
-// VERSÃO CORRIGIDA (com crases)
-const linkFinal = `https://wa.me{numeroTelefone}?text=${encodeURIComponent(textoMensagem)}`;
-    
-    </script>
-    
+}   
+    </script>    
 </html>
